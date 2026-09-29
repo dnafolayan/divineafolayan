@@ -6,16 +6,16 @@ function Projects() {
     const projects: Project[] = projectData;
 
     return (
-        <section id="projects" className="px-6 py-28 lg:px-8 lg:py-36">
+        <section id="projects" aria-labelledby="projects-title" className="px-6 py-28 lg:px-8 lg:py-36">
             <div className="mx-auto w-full max-w-6xl border-t border-white/10 pt-12 md:pt-16">
                 <div className="mb-10">
                     <p className="mb-3 text-xs uppercase tracking-[.2em] text-[#b5f36b]">
                         Selected work
                     </p>
-                    <h2 className="text-4xl font-semibold tracking-tight text-white md:text-5xl">
+                    <h2 id="projects-title" className="text-4xl font-semibold tracking-tight text-white md:text-5xl">
                         Projects
                     </h2>
-                    <p className="mt-4 max-w-2xl text-[15px] leading-7 text-white/55">
+                    <p className="mt-4 max-w-2xl text-[15px] leading-7 text-white/70">
                         A few examples of the systems, tools, and interfaces I
                         enjoy building.
                     </p>

@@ -4,16 +4,16 @@ import type { SkillGroup } from "../types/skills";
 function Skills() {
     const skillGroups: SkillGroup[] = skillGroup;
     return (
-        <section id="skills" className="px-6 py-28 lg:px-8 lg:py-36">
+        <section id="skills" aria-labelledby="skills-title" className="px-6 py-28 lg:px-8 lg:py-36">
             <div className="mx-auto w-full max-w-6xl border-t border-white/10 pt-12 md:pt-16">
                 <div className="mb-10">
-                    <p className="mb-3 text-xs uppercase tracking-[.2em] text-[#b5f36b]">
+                    <p aria-hidden="true" className="mb-3 text-xs uppercase tracking-[.2em] text-[#b5f36b]">
                         My toolkit
                     </p>
-                    <h2 className="text-4xl font-semibold tracking-tight text-white md:text-5xl">
+                    <h2 id="skills-title" className="text-4xl font-semibold tracking-tight text-white md:text-5xl">
                         Skills
                     </h2>
-                    <p className="mt-4 max-w-2xl text-[15px] leading-7 text-white/55">
+                    <p className="mt-4 max-w-2xl text-[15px] leading-7 text-white/70">
                         I enjoy building reliable and user-friendly products
                         across the full stack, from APIs to polished interfaces.
                     </p>

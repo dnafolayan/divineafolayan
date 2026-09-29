@@ -13,10 +13,13 @@
   --muted: #a0a79f;
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: 7rem; }
 body { margin: 0; min-width: 320px; background: #080b09; }
 ::selection { background: #b5f36b; color: #080b09; }
-section { scroll-margin-top: 5rem; }
+section { scroll-margin-top: 7rem; }
+a:focus-visible, button:focus-visible, main:focus-visible { outline: 3px solid var(--green); outline-offset: 4px; }
+.skip-link { position: fixed; top: 0.75rem; left: 0.75rem; z-index: 100; transform: translateY(-200%); border-radius: 9999px; background: var(--green); padding: 0.75rem 1rem; color: #10150b; font-weight: 700; }
+.skip-link:focus { transform: translateY(0); }
 
 @keyframes float-in {
   from { opacity: 0; transform: translateY(12px); }
@@ -24,5 +27,6 @@ section { scroll-margin-top: 5rem; }
 }
 .hero-in { animation: float-in 800ms cubic-bezier(.2,.7,.2,1) both; }
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  html { scroll-behavior: auto !important; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
 }

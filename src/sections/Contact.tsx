@@ -5,17 +5,17 @@ function Contact() {
     const links: Contacts[] = contactData;
 
     return (
-        <section id="contact" className="px-6 py-28 lg:px-8 lg:py-36">
+        <section id="contact" aria-labelledby="contact-title" className="px-6 py-28 lg:px-8 lg:py-36">
             <div className="mx-auto w-full max-w-6xl border-t border-white/10 pt-12 md:pt-16">
                 <div className="grid gap-10 md:grid-cols-[1fr_auto] md:items-end">
                     <div>
                         <p className="mb-3 text-xs uppercase tracking-[.2em] text-[#b5f36b]">
                             Let’s connect
                         </p>
-                        <h2 className="text-4xl font-semibold tracking-tight text-white md:text-5xl">
+                        <h2 id="contact-title" className="text-4xl font-semibold tracking-tight text-white md:text-5xl">
                             Contact
                         </h2>
-                        <p className="mt-4 max-w-2xl text-base leading-7 text-white/60 md:text-lg">
+                        <p className="mt-4 max-w-2xl text-base leading-7 text-white/75 md:text-lg">
                             I’m interested in building software, exploring new
                             technologies, and connecting with people working on
                             interesting problems.
@@ -45,9 +45,9 @@ function Contact() {
                         ))}
                     </ul>
                 </div>
-                <p className="mt-12 border-t border-white/[0.07] pt-5 text-xs text-white/30">
+                <footer className="mt-12 border-t border-white/[0.07] pt-5 text-xs text-white/70">
                     © {new Date().getFullYear()} Divine Afolayan
-                </p>
+                </footer>
             </div>
         </section>
     );

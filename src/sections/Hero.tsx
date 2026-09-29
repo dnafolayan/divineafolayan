@@ -4,6 +4,7 @@ function Hero() {
     return (
         <section
             id="hero"
+            aria-labelledby="hero-title"
             className="relative flex min-h-[92svh] items-center overflow-hidden px-6 pb-20 pt-28 lg:px-8"
         >
             <div
@@ -12,11 +13,11 @@ function Hero() {
             />
             <div className="hero-in relative mx-auto grid w-full max-w-6xl items-center gap-14 md:grid-cols-[1.1fr_.9fr] md:gap-10">
                 <div>
-                    <p className="mb-7 flex items-center gap-2 text-xs font-medium uppercase tracking-[.22em] text-white/50">
-                        <span className="h-1.5 w-1.5 rounded-full bg-[#b5f36b] shadow-[0_0_12px_#b5f36b]" />{" "}
+                    <p className="mb-7 flex items-center gap-2 text-xs font-medium uppercase tracking-[.22em] text-white/70">
+                        <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-[#b5f36b] shadow-[0_0_12px_#b5f36b]" />{" "}
                         Available for opportunities
                     </p>
-                    <h1 className="max-w-3xl text-[clamp(3.4rem,8vw,6.8rem)] font-semibold leading-[.96] tracking-[-.07em] text-[#f5f7f3]">
+                    <h1 id="hero-title" className="max-w-3xl text-[clamp(3.4rem,8vw,6.8rem)] font-semibold leading-[.96] tracking-[-.07em] text-[#f5f7f3]">
                         Building what’s{" "}
                         <span className="text-[#b5f36b]">next.</span>
                     </h1>
@@ -47,7 +48,7 @@ function Hero() {
                             GitHub
                         </a>
                     </div>
-                    <p className="mt-14 text-xs tracking-wide text-white/35">
+                    <p aria-hidden="true" className="mt-14 text-xs tracking-wide text-white/70">
                         GO <span className="mx-2 text-[#b5f36b]/70">·</span>{" "}
                         SYSTEMS{" "}
                         <span className="mx-2 text-[#b5f36b]/70">·</span>{" "}
@@ -68,7 +69,7 @@ function Hero() {
                                 <p className="text-sm font-medium text-white">
                                     Divine Afolayan
                                 </p>
-                                <p className="mt-1 text-xs text-white/60">
+                                <p className="mt-1 text-xs text-white/70">
                                     Backend engineer
                                 </p>
                             </div>
